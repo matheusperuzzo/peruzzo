@@ -1,5 +1,3 @@
-Meu Primeiro Repositório
+Criei esse repositório pra treinar prog., e como estou no começo coloquei vocês para me ajudar.
 
-=========================
-
-O GIt/GitHub são legais
+Obrigado pela ajuda.
