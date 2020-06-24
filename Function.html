@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma Legal!!</title>
+    <style>
+        body{
+            background-color: rgb(185, 131, 14);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            font: 30pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua soma é maior que vinte?</h1>
+    <script>
+        //Declarar variáveis
+        var n1 = Number(prompt('Escolha um número:'));
+        var n2 = Number(prompt('Escolha outro número:'));
+        //Chamando a função
+        soma(n1,n2);
+        //Declarar a função
+        function soma(a,b){
+            //Código da função
+            var res = a + b;
+            alert(res);
+            
+            if(res >= 20){
+                document.write('Maior que vinte!!');
+            }
+            else{
+                document.write('Menor que vinte!!');
+            }
+        }
+        
+    </script>
+</body>
+</html>
