@@ -12,8 +12,17 @@
 </head>
 <body>
     <script>
-        var n = Number(prompt('Escolha um número de 1-9:'));
-        0!='';
+        var n = prompt('Escolha um número de 1-9:');
+        var vazio = '';
+
+        if(n===vazio){
+            alert('Nenhum número escolhido, digite um número!');
+            location.reload(); 
+            console.log(n);
+        }
+        else{
+            Number(n);
+        }
         
         if(n>10){
             alert('Número maior que 10, digite outro número!');
@@ -23,26 +32,19 @@
             alert('Número escolhido é 10, digite outro número!');
             location.reload();        
         }
-        else if(n===''){
-            alert('Nenhum número escolhido, digite um número!');
-            location.reload(); 
-            console.log(n)
-        }
-        else if(n==='0'){
-            alert('Número deve ser maior que 0, digite outro número!');
-            location.reload();
-            console.log(n)
-        }
-        else{
+        else if(n>0){
             alert('Esta página irá contar do número escolhido até 10!');
             while(n<=10){
                 document.write(n + '</br>');
                 n++;
-                console.log(n)
+                console.log(n);
             }
         }
-        
-        
+        else{
+            alert('Número deve ser maior que 0, digite outro número!');
+            location.reload();
+            console.log(n);
+        }  
     </script>
 </body>
 </html>
