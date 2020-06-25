@@ -11,9 +11,14 @@
     </style>
 </head>
 <body>
+    <input type="button" value="Outro" onclick="loadpg()">
     <script>
         var n = prompt('Escolha um número de 1-9:');
         var vazio = '';
+
+        function loadpg(){
+            location.reload()
+        }
 
         if(n===vazio){
             alert('Nenhum número escolhido, digite um número!');
@@ -34,7 +39,7 @@
         else if(n>0){
             alert('Esta página irá contar do número escolhido até 10!');
             while(n<=10){
-                document.write(n + '</br>');
+                document.write('<br>' + n);
                 n++;
             }
         }
